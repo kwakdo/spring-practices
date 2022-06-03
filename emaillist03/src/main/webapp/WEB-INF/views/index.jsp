@@ -18,11 +18,11 @@
 			</tr>
 			<tr>
 				<td align=right width="110">Last name: </td>
-				<td width="110">${vo.lastName }></td>
+				<td width="110">${vo.lastName }</td>
 			</tr>
 			<tr>
 				<td align=right>Email address: </td>
-				<td>${vo.email }></td>
+				<td>${vo.email }</td>
 			</tr>
 		</table>
 		<br>
