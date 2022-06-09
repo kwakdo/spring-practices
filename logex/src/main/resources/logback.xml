@@ -11,7 +11,7 @@
 	</appender>
 
 	<appender name="fileAppender2" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>/logex/logex2.log</file>
+		<file>/logex/logex2.log</file> 	<!-- 맥이면 User/홈디렉토리/logex/logex2.log -->
 		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
 			<Pattern>
 				%d{HH:mm:ss.SSS} [%thread] %-5level %logger{5} - %msg%n
@@ -48,14 +48,16 @@
 
 
 	<!--
-		com.douzone.logex2 아래 패키지 로그들만  \logex\logex2.log 파일에만  출력하는 로거
+		com.douzone.logex2 아래 클래스의 메소드에서 남기는 로그들만
+		\logex\logex2.log 파일에만  출력하는 로거
 	-->
 	<logger name="com.douzone.logex2" level="debug" additivity="false">
             <appender-ref ref="fileAppender2" />
     </logger>
     
 	<!--
-		com.douzone.logex3 아래 패키지 로그들만  \logex\logex3.log 파일과 콘솔로 출력하는 로거
+		com.douzone.logex3 아래 패키지 로그들만  
+		\logex\logex3.log 파일과 콘솔로 출력하는 로거
 	-->
 	<logger name="com.douzone.logex3"  level="warn" additivity="false">
             <appender-ref ref="fileAppender3" />
