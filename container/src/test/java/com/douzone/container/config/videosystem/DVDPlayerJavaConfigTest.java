@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
+import com.douzone.container.config.videosystem.DVDPlayerConfig;
 import com.douzone.container.videosystem.DVDPlayer;
 import com.douzone.container.videosystem.DigitalVideoDisc;
 
