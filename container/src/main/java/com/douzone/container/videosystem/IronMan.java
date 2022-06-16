@@ -6,7 +6,7 @@ public class IronMan implements DigitalVideoDisc {
 	
 	@Override
 	public String play() {
-		return "playing Move " + studio + "'s " + title;
+		return "Playing Movie " + studio + "'s " + title;
 	}
 
 }
